@@ -36,3 +36,11 @@ const lowestElement = Math.min(...arr);
 
 console.log("Largest Element:", largestElement2);
 console.log("Lowest Element:", lowestElement);
+
+/* ============ How to slice (22, 48) from this array? ============ */
+// Solution:
+const startIndex = arr.indexOf(22);
+const endIndex = arr.indexOf(48) + 1;
+
+const subArray = arr.slice(startIndex, endIndex);
+console.log(subArray);
